@@ -21,3 +21,17 @@ python3 -m unittest discover -s tests -p "test_mcp_server.py" -v
 ```
 
 See [docs/MCP.md](docs/MCP.md) and [mcp-server/README.md](mcp-server/README.md).
+
+
+## Quick start & testing
+
+```bash
+# run the SWOTIFY
+python3 -m http.server 8080
+
+# verify the MCP server speaks the protocol
+python3 -m unittest discover -s tests -p "test_mcp_server.py" -v
+```
+
+See [docs/MCP.md](docs/MCP.md) for the exposed tools. All files were generated
+(and the application hardened) by the TRL rollout in `mcp-server/`.
