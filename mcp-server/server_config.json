@@ -1,0 +1,86 @@
+{
+  "app": {
+    "name": "SWOTIFY",
+    "version": "unknown",
+    "description": "AI SWOT analysis web app that performs competitor and market analysis"
+  },
+  "stack": "python",
+  "routes": [
+    {
+      "method": "get",
+      "path": "/api/health"
+    },
+    {
+      "method": "post",
+      "path": "/api/login"
+    },
+    {
+      "method": "post",
+      "path": "/api/entities"
+    },
+    {
+      "method": "get",
+      "path": "/api/entities"
+    },
+    {
+      "method": "get",
+      "path": "/api/entities/{entity_id}"
+    },
+    {
+      "method": "post",
+      "path": "/api/track"
+    },
+    {
+      "method": "get",
+      "path": "/api/entities/{entity_id}/analytics"
+    },
+    {
+      "method": "get",
+      "path": "/api/entities/{entity_id}/analytics/live"
+    },
+    {
+      "method": "get",
+      "path": "/api/questions"
+    },
+    {
+      "method": "post",
+      "path": "/api/entities/{entity_id}/assessments"
+    },
+    {
+      "method": "get",
+      "path": "/api/entities/{entity_id}/report"
+    },
+    {
+      "method": "get",
+      "path": "/api/entities/{entity_id}/agent/reach"
+    },
+    {
+      "method": "post",
+      "path": "/api/entities/{entity_id}/agent/audit"
+    },
+    {
+      "method": "post",
+      "path": "/api/entities/{entity_id}/documents"
+    },
+    {
+      "method": "get",
+      "path": "/api/entities/{entity_id}/documents"
+    },
+    {
+      "method": "delete",
+      "path": "/api/entities/{entity_id}/documents/{doc_id}"
+    },
+    {
+      "method": "get",
+      "path": "/{full_path:path}"
+    }
+  ],
+  "pages": [],
+  "base_url": "http://localhost:8000",
+  "module": null,
+  "scripts": {},
+  "cli_entry": null,
+  "server": "mcp-server/mcp_server.py",
+  "runner": "python",
+  "runner_cmd": "python3"
+}
